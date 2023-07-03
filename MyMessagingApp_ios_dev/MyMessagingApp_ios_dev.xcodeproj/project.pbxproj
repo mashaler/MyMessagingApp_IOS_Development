@@ -13,6 +13,7 @@
 		CC7D935C2A4D6BEC001FE312 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D935B2A4D6BEC001FE312 /* VideoPlayerViewController.swift */; };
 		CC7D935E2A4D6C09001FE312 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D935D2A4D6C09001FE312 /* NewConversationViewController.swift */; };
 		CC7D93602A4D6C1F001FE312 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D935F2A4D6C1F001FE312 /* ProfileViewController.swift */; };
+		CC7D93632A4DBDA7001FE312 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D93622A4DBDA7001FE312 /* Extensions.swift */; };
 		CC99B1852A40370300CD29E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99B1842A40370300CD29E5 /* AppDelegate.swift */; };
 		CC99B1872A40370300CD29E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99B1862A40370300CD29E5 /* SceneDelegate.swift */; };
 		CC99B1892A40370300CD29E5 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99B1882A40370300CD29E5 /* ConversationsViewController.swift */; };
@@ -28,6 +29,7 @@
 		CC7D935B2A4D6BEC001FE312 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		CC7D935D2A4D6C09001FE312 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		CC7D935F2A4D6C1F001FE312 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CC7D93622A4DBDA7001FE312 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CC99B1812A40370300CD29E5 /* MyMessagingApp_ios_dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMessagingApp_ios_dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC99B1842A40370300CD29E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC99B1862A40370300CD29E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			children = (
 				CC99B1842A40370300CD29E5 /* AppDelegate.swift */,
 				CC99B1862A40370300CD29E5 /* SceneDelegate.swift */,
+				CC7D93622A4DBDA7001FE312 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				CC7D935E2A4D6C09001FE312 /* NewConversationViewController.swift in Sources */,
 				CC99B1892A40370300CD29E5 /* ConversationsViewController.swift in Sources */,
 				CC7D935C2A4D6BEC001FE312 /* VideoPlayerViewController.swift in Sources */,
+				CC7D93632A4DBDA7001FE312 /* Extensions.swift in Sources */,
 				CC99B1852A40370300CD29E5 /* AppDelegate.swift in Sources */,
 				CC7D93602A4D6C1F001FE312 /* ProfileViewController.swift in Sources */,
 				CC99B1872A40370300CD29E5 /* SceneDelegate.swift in Sources */,
