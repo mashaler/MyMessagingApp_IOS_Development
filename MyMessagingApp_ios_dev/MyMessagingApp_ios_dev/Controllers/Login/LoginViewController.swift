@@ -129,6 +129,7 @@ class LoginViewController: UIViewController {
             }
             let user = result.user
             print("Logged in User:\(user)")
+            return
 
         })
     }
