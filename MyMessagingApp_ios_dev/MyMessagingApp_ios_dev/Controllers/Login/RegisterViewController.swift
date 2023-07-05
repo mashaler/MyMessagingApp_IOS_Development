@@ -30,6 +30,8 @@ class RegisterViewController: UIViewController {
     private let FirstNameField: UITextField = {
         let field = UITextField()
         field.autocapitalizationType = .none
+        field.layer.shadowOffset = CGSize(width: 3, height: 3)
+        field.layer.shadowOpacity = 0.4
         field.autocorrectionType = .no
         field.returnKeyType = .continue
         field.layer.cornerRadius = 12
@@ -47,6 +49,8 @@ class RegisterViewController: UIViewController {
         let field = UITextField()
         field.autocapitalizationType = .none
         field.autocorrectionType = .no
+        field.layer.shadowOffset = CGSize(width: 3, height: 3)
+        field.layer.shadowOpacity = 0.4
         field.returnKeyType = .continue
         field.layer.cornerRadius = 12
         field.layer.borderWidth = 1
@@ -63,6 +67,8 @@ class RegisterViewController: UIViewController {
         let field = UITextField()
         field.autocapitalizationType = .none
         field.autocorrectionType = .no
+        field.layer.shadowOffset = CGSize(width: 3, height: 3)
+        field.layer.shadowOpacity = 0.4
         field.returnKeyType = .continue
         field.layer.cornerRadius = 12
         field.layer.borderWidth = 1
@@ -79,6 +85,8 @@ class RegisterViewController: UIViewController {
         let field = UITextField()
         field.autocapitalizationType = .none
         field.autocorrectionType = .no
+        field.layer.shadowOffset = CGSize(width: 3, height: 3)
+        field.layer.shadowOpacity = 0.4
         field.returnKeyType = .done
         field.layer.cornerRadius = 12
         field.layer.borderWidth = 1
@@ -95,6 +103,8 @@ class RegisterViewController: UIViewController {
     private let registerButton: UIButton = {
         let button = UIButton()
         button.setTitle("Register", for: .normal)
+        button.layer.shadowOffset = CGSize(width: 3, height: 3)
+        button.layer.shadowOpacity = 0.4
         button.backgroundColor = .systemGreen
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 12
@@ -193,13 +203,20 @@ class RegisterViewController: UIViewController {
         }
         //firebase log in
         
-        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { authResult, error in
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { [weak self] authResult, error in
+            
+            guard let strongSelf = self else {
+                return
+            }
+            
+            
             guard let result = authResult, error == nil else {
                 print("Error creating a user")
                 return
             }
             let user = result.user
             print("Created User:\(user)")
+            strongSelf.navigationController?.dismiss(animated: true, completion: nil)
             
         })
     }
@@ -275,6 +292,7 @@ extension RegisterViewController: UIImagePickerControllerDelegate, UINavigationC
 //        print(info)
         
 //        self.imageView
+        
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
